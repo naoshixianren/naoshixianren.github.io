@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -79,11 +79,13 @@
 
 
 
+<meta name="description" content="生活哪里有什么岁月静好，不过是有人替你负重前行">
 <meta property="og:type" content="website">
-<meta property="og:title" content="闹市闲人">
+<meta property="og:title" content="陈杰の博客">
 <meta property="og:url" content="https:&#x2F;&#x2F;naoshixianren.github.io&#x2F;index.html">
-<meta property="og:site_name" content="闹市闲人">
-<meta property="article:author" content="ChenJie">
+<meta property="og:site_name" content="陈杰の博客">
+<meta property="og:description" content="生活哪里有什么岁月静好，不过是有人替你负重前行">
+<meta property="article:author" content="闹市闲人">
 <meta name="twitter:card" content="summary">
 
 
@@ -92,9 +94,9 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -120,7 +122,7 @@
 
 
 
-  <title>闹市闲人</title>
+  <title>陈杰の博客</title>
   
 
 
@@ -151,12 +153,12 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">闹市闲人</span>
+        <span class="site-title">陈杰の博客</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle">闹市闲人的博客</p>
+        <p class="site-subtitle">记录日常琐事</p>
       
   </div>
 
@@ -182,6 +184,16 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -251,13 +263,13 @@
     <link itemprop="mainEntityOfPage" href="https://naoshixianren.github.io/2019/12/18/mac%E4%B8%8BIntelliJ%20IDEA%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ChenJie">
+      <meta itemprop="name" content="闹市闲人">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/%5Bobject%20Object%5D">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="闹市闲人">
+      <meta itemprop="name" content="陈杰の博客">
     </span>
 
     
@@ -397,8 +409,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">ChenJie</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <img class="site-author-image" itemprop="image"
+                src="/%5Bobject%20Object%5D"
+                alt="闹市闲人" />
+            
+              <p class="site-author-name" itemprop="name">闹市闲人</p>
+              <p class="site-description motion-element" itemprop="description">生活哪里有什么岁月静好，不过是有人替你负重前行</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -438,6 +454,13 @@
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
@@ -463,11 +486,7 @@
 
 
 
-  <span class="post-meta-divider">|</span>
 
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
 
 
 
@@ -484,11 +503,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
@@ -513,6 +527,8 @@
 
   
 
+
+  
 
 
 
@@ -554,6 +570,11 @@
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
 
   
 
@@ -566,6 +587,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
 
