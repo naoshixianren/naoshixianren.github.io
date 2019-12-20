@@ -79,16 +79,19 @@
 
 
 
-<meta name="description" content="​       最近换了mac电脑，赶上公司其他项目需要协助搭建基于vue的前端开发框架，就在自己的电脑上折腾了一下，以此为记录  安装homebrew 安装node.js 安装国内淘宝镜像 安装webpack 安装vue脚手架 创建vue项目 项目启动">
+<meta name="description" content="最近换了mac电脑，赶上公司其他项目需要协助搭建基于vue的前端开发框架，就在自己的电脑上折腾了一下，以此为记录  安装homebrew​      homebrew是mac os平台下软件包管理工具，拥有安装、卸载、更新、查看、搜索等很多实用的功能。简单的一条指令，就可以实现包管理，而你不用关心各种依赖和文件路径的情况，十分的方便、快捷。  homebrew安装准备 安装homebrew需要依赖">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mac环境下vue开发环境搭建">
 <meta property="og:url" content="https:&#x2F;&#x2F;naoshixianren.github.io&#x2F;2019&#x2F;12&#x2F;18&#x2F;Mac%E7%8E%AF%E5%A2%83%E4%B8%8Bvue%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA&#x2F;index.html">
 <meta property="og:site_name" content="陈杰の博客">
-<meta property="og:description" content="​       最近换了mac电脑，赶上公司其他项目需要协助搭建基于vue的前端开发框架，就在自己的电脑上折腾了一下，以此为记录  安装homebrew 安装node.js 安装国内淘宝镜像 安装webpack 安装vue脚手架 创建vue项目 项目启动">
+<meta property="og:description" content="最近换了mac电脑，赶上公司其他项目需要协助搭建基于vue的前端开发框架，就在自己的电脑上折腾了一下，以此为记录  安装homebrew​      homebrew是mac os平台下软件包管理工具，拥有安装、卸载、更新、查看、搜索等很多实用的功能。简单的一条指令，就可以实现包管理，而你不用关心各种依赖和文件路径的情况，十分的方便、快捷。  homebrew安装准备 安装homebrew需要依赖">
+<meta property="og:image" content="https:&#x2F;&#x2F;naoshixianren.github.io&#x2F;.io&#x2F;&#x2F;1.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;naoshixianren.github.io&#x2F;.io&#x2F;&#x2F;2.png">
 <meta property="article:published_time" content="2019-12-18T09:22:44.247Z">
-<meta property="article:modified_time" content="2019-12-18T10:34:08.505Z">
+<meta property="article:modified_time" content="2019-12-20T02:41:38.075Z">
 <meta property="article:author" content="闹市闲人">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;naoshixianren.github.io&#x2F;.io&#x2F;&#x2F;1.png">
 
 
 
@@ -328,15 +331,71 @@
       
 
       
-        <p>​       最近换了mac电脑，赶上公司其他项目需要协助搭建基于vue的前端开发框架，就在自己的电脑上折腾了一下，以此为记录</p>
+        <p>最近换了mac电脑，赶上公司其他项目需要协助搭建基于vue的前端开发框架，就在自己的电脑上折腾了一下，以此为记录</p>
 <ol>
-<li><h5 id="安装homebrew"><a href="#安装homebrew" class="headerlink" title="安装homebrew"></a>安装homebrew</h5></li>
-<li><h5 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h5></li>
-<li><h5 id="安装国内淘宝镜像"><a href="#安装国内淘宝镜像" class="headerlink" title="安装国内淘宝镜像"></a>安装国内淘宝镜像</h5></li>
-<li><h5 id="安装webpack"><a href="#安装webpack" class="headerlink" title="安装webpack"></a>安装webpack</h5></li>
-<li><h5 id="安装vue脚手架"><a href="#安装vue脚手架" class="headerlink" title="安装vue脚手架"></a>安装vue脚手架</h5></li>
-<li><h5 id="创建vue项目"><a href="#创建vue项目" class="headerlink" title="创建vue项目"></a>创建vue项目</h5></li>
-<li><h5 id="项目启动"><a href="#项目启动" class="headerlink" title="项目启动"></a>项目启动</h5></li>
+<li><h5 id="安装homebrew"><a href="#安装homebrew" class="headerlink" title="安装homebrew"></a>安装homebrew</h5><p>​      homebrew是mac os平台下软件包管理工具，拥有安装、卸载、更新、查看、搜索等很多实用的功能。简单的一条指令，就可以实现包管理，而你不用关心各种依赖和文件路径的情况，十分的方便、快捷。</p>
+<ul>
+<li><p>homebrew安装准备</p>
+<p>安装homebrew需要依赖Xcode命令行工具</p>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xcode-<span class="keyword">select</span> <span class="comment">--install</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>homebrew安装</p>
+<p>​      网络上可以找到各种homebrew的安装命令，但笔者推荐，进入官网获取，homebrew官网地址：<a href="http://brew.sh/，首页的代码即为home安装命令" target="_blank" rel="noopener">http://brew.sh/，首页的代码即为home安装命令</a></p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="regexp">/usr/</span>bin<span class="regexp">/ruby -e "$(curl -fsSL https:/</span><span class="regexp">/raw.githubusercontent.com/</span>Homebrew<span class="regexp">/install/m</span>aster<span class="regexp">/install)"</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/.io//1.png" alt="1"></p>
+</li>
+<li><p>homebrew卸载</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="regexp">/usr/</span>bin<span class="regexp">/ruby -e "$(curl -fsSL https:/</span><span class="regexp">/raw.githubusercontent.com/</span>Homebrew<span class="regexp">/install/m</span>aster<span class="regexp">/uninstall)"</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>homebrew常用命令</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">brew </span>install：安装软件，例：<span class="keyword">brew </span>install git</span><br><span class="line"><span class="keyword">brew </span>search ：搜索软件，例：<span class="keyword">brew </span>search java</span><br><span class="line"><span class="keyword">brew </span>uninstall：卸载软件，例：<span class="keyword">brew </span>uninstall git</span><br><span class="line"><span class="keyword">brew </span>update：更细所有软件</span><br><span class="line"><span class="keyword">brew </span>upgrade：更新具体软件，例：<span class="keyword">brew </span>upgrade java</span><br><span class="line"><span class="keyword">brew </span>list：显示所有已安装软件</span><br><span class="line"><span class="keyword">brew </span><span class="meta">info</span>：查看软件信息，例：<span class="keyword">brew </span><span class="meta">info</span> git</span><br><span class="line"><span class="keyword">brew </span>reps：显示包依赖</span><br><span class="line"><span class="keyword">brew </span>services list：查看已安装的服务</span><br><span class="line"><span class="keyword">brew </span>services start/stop/restart serverName：服务启动/停止/重启</span><br><span class="line"><span class="keyword">brew </span>clean：清理所有旧版本</span><br><span class="line"><span class="keyword">brew </span>cask：<span class="keyword">brew的日常软件操作，例brew </span>cask install vscode</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ol>
+<ol start="2">
+<li><h5 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h5><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install <span class="keyword">node</span>.<span class="title">js</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="3">
+<li><h5 id="安装国内淘宝镜像"><a href="#安装国内淘宝镜像" class="headerlink" title="安装国内淘宝镜像"></a>安装国内淘宝镜像</h5><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">npm</span> install -g --registry=https:<span class="regexp">//</span>registry.<span class="built_in">npm</span>.taobao.org</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="4">
+<li><h5 id="安装webpack"><a href="#安装webpack" class="headerlink" title="安装webpack"></a>安装webpack</h5><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> webpack -g</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="5">
+<li><h5 id="安装vue脚手架"><a href="#安装vue脚手架" class="headerlink" title="安装vue脚手架"></a>安装vue脚手架</h5><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g vue-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure>
+
+<p>安装后输入vue或vue list，验证脚手架是否安装成功</p>
+</li>
+</ol>
+<ol start="6">
+<li><h5 id="创建vue项目"><a href="#创建vue项目" class="headerlink" title="创建vue项目"></a>创建vue项目</h5><p>进入到项目目录，输入安装命令后，设置各种配置信息</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">vue init webpack projectName</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="7">
+<li><h5 id="项目启动"><a href="#项目启动" class="headerlink" title="项目启动"></a>项目启动</h5><p>​      进入项目根目录，控制台执行npm run dev即可启动项目，启动完成后浏览器输入localhost:8080，能够正常显示vue页面，即安装成功</p>
+<p><img src="/.io//2.png" alt="1"></p>
+</li>
 </ol>
 
       
